@@ -1,0 +1,23 @@
+*{
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+body{
+    background-color: white;
+}
+
+#header{
+    background-image: url("img/banner-1.svg");
+    background-repeat: no-repeat; /* Prevent image tiling */
+    background-position: center; /* Center the image horizontally and vertically */
+    background-size: cover;
+}
+aside{
+    height: 90%;
+}
+#logo_int_50{
+    filter: drop-shadow(
+        0 0 10px rgba(0, 0, 0, .8)
+    );
+}
