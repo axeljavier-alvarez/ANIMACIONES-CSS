@@ -1,0 +1,101 @@
+*{
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+body{
+    background-color: white;
+}
+
+#header{
+    background-image: url("img/banner-1.svg");
+    background-repeat: no-repeat; /* Prevent image tiling */
+    background-position: center; /* Center the image horizontally and vertically */
+    background-size: cover;
+}
+aside{
+    height: 90%;
+}
+#logo_int_50{
+    filter: drop-shadow(
+        0 0 10px rgba(0, 0, 0, .8)
+    );
+}
+
+
+/*ANIMACIONES*/
+
+@keyframes animacion1 {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: aquamarine;
+    }
+}
+
+
+.animacion1 {
+    width: 140px;
+    height: 100px;
+    background-color: red;
+    animation-name: animacion1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+
+.animaciones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.animacion2 {
+    animation: animacion2 4s infinite linear;
+   margin-left: 60px;
+  }
+  
+  @keyframes animacion2 {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animacion3 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: animacion3 5s linear 2s infinite alternate;
+    margin-left: 60px;
+  }
+
+  @keyframes animacion3 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+
+  .animacion4{
+    animation: animacion4 4s infinite;
+    position: relative;
+    animation-timing-function: ease-out;
+    margin-left: 60px;
+
+  }
+  @keyframes animacion4 {
+    0%   {left:0px; top:0px;}
+    25%  {left:10px; top:0px;}
+    50%  {left:5px; top:5px;}
+    75%  {left:0px; top:5px;}
+    100% {left:0px; top:0px;}
+  }
