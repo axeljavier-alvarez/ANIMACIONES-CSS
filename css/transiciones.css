@@ -1,0 +1,55 @@
+
+#art1,
+#art2,
+#art3,
+#art4,
+#art5 {
+    width: 100px;
+    height: 100px;
+    animation: animacion2 10s infinite;
+    transition: width 2s;
+    background-color: blue;
+}
+
+
+#art1 {
+    transition-timing-function: linear;
+}
+
+#art2 {
+    transition-timing-function: ease;
+}
+
+#art3 {
+    transition-timing-function: ease-in;
+}
+
+#art4 {
+    transition-timing-function: ease-out;
+}
+
+#art5 {
+    transition-timing-function: ease-in-out;
+}
+
+#art1:hover {
+    width: 300px;
+}
+
+#art2:hover {
+    width: 300px;
+}
+
+#art3:hover {
+    width: 300px;
+}
+
+#art4:hover {
+    width: 300px;
+}
+
+#art5:hover {
+    width: 300px;
+}
+
+
