@@ -1,55 +1,118 @@
+*{
+    border-collapse: collapse;
+    font-size: 20px;
+}
 
-#art1,
-#art2,
-#art3,
-#art4,
-#art5 {
+body{
+    background-color: white;
+}
+
+#header{
+    background-image: url("img/banner-1.svg");
+    background-repeat: no-repeat; /* Prevent image tiling */
+    background-position: center; /* Center the image horizontally and vertically */
+    background-size: cover;
+}
+aside{
+    height: 90%;
+}
+#logo_int_50{
+    filter: drop-shadow(
+        0 0 10px rgba(0, 0, 0, .8)
+    );
+}
+
+/* TRANSICIONES */
+.art1{
     width: 100px;
     height: 100px;
     animation: animacion2 10s infinite;
     transition: width 2s;
-    background-color: blue;
+    /* para que cambie de color */
+    background-color: yellow;
+    animation-name: art1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+.art2{
+    width: 100px;
+    height: 100px;
+    animation: animacion2 10s infinite;
+    transition: width 2s;
+     /* para que cambie de color */
+     background-color: darkblue;
+     animation-name: art2;
+     animation-duration: 8s;
+     animation-iteration-count: infinite;
+
+}
+
+.art3 {
+    width: 100px;
+    height: 100px;
+    animation: animacion2 10s infinite;
+    transition: width 2s;
+    background-color: black;
 }
 
 
-#art1 {
+.art1 {
     transition-timing-function: linear;
 }
 
-#art2 {
+.art2 {
     transition-timing-function: ease;
 }
 
-#art3 {
-    transition-timing-function: ease-in;
-}
 
-#art4 {
-    transition-timing-function: ease-out;
-}
 
-#art5 {
-    transition-timing-function: ease-in-out;
-}
 
-#art1:hover {
+.art1:hover {
     width: 300px;
 }
 
-#art2:hover {
-    width: 300px;
-}
-
-#art3:hover {
-    width: 300px;
-}
-
-#art4:hover {
-    width: 300px;
-}
-
-#art5:hover {
+.art2:hover {
     width: 300px;
 }
 
 
+
+
+@keyframes art1 {
+    from {
+        background-color: yellow;
+    }
+
+    to {
+        background-color: green;
+    }
+
+    to {
+        background-color: pink;
+    }
+}
+
+@keyframes art2 {
+    from {
+        background-color: darkblue;
+    }
+
+    to {
+        background-color: gray;
+    }
+
+    to {
+        background-color: skyblue;
+    }
+}
+
+#delay {
+    font-size: 14px;
+    transition-property: font-size;
+    transition-duration: 4s;
+    transition-delay: 2s;
+  }
+  
+  #delay:hover {
+    font-size: 36px;
+  }

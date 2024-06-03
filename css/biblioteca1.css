@@ -21,15 +21,14 @@ aside{
         0 0 10px rgba(0, 0, 0, .8)
     );
 }
-h1{
-    text-align: center;
-}
 
-h4{
-    text-align: left;
-    color:orange
-}
 
-p{
-    text-align: justify;
-}
+/* BIBLIOTECA 1 */
+.animate__animated {
+    animation-iteration-count: infinite;
+  }
+  
+.animate__rubberBand,
+.animate__tada {
+    animation-iteration-count: infinite;
+  }

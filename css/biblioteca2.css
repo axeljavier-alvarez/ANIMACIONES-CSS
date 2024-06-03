@@ -1,0 +1,179 @@
+*{
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+body{
+    background-color: white;
+}
+
+#header{
+    background-image: url("img/banner-1.svg");
+    background-repeat: no-repeat; /* Prevent image tiling */
+    background-position: center; /* Center the image horizontally and vertically */
+    background-size: cover;
+}
+aside{
+    height: 90%;
+}
+#logo_int_50{
+    filter: drop-shadow(
+        0 0 10px rgba(0, 0, 0, .8)
+    );
+}
+
+/* BIBLIOTECA 2 LIBRE */
+h1::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  h1::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsl(200 100% 80%);
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+  
+  h1 {
+    position: relative;
+    text-align: center;
+  }
+  
+  .element {
+    width: 50px;
+    height: 150px;
+    background: grey;
+  }
+  
+  .rotate {
+    transform: translate(150px, 0) rotate(45deg);
+    transform-origin: 0% 0%;
+  }
+
+  /* NUEVO ELEMENTO */
+  .logo-holder {
+    width: 180px;
+    height: 220px;
+    position: relative;
+    margin: 0 auto ;
+    padding-top: 12px;
+    padding-bottom: 24px;
+ }
+
+.bg {
+
+  position: absolute;
+  top: 9px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  background: url(http://boutique.flarework.com/wp-content/themes/boutique/img/logo_large.png) center 0px no-repeat ;
+    background-size: contain;
+}
+
+.bar {
+    position: relative;
+    height: 8px;
+    background: #6a6a6a;
+    width:  0%;
+    top: 0px;
+    left: 18px;
+    margin-top: 8px;
+    box-shadow: 0 0 3px rgba(192,192,192,0.9);
+    animation: fill 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill1 {
+  animation: fill-1 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill2 {
+   animation:  fill-2 5s infinite alternate, colors 5s infinite alternate;
+}
+
+
+.bar.fill3 {
+   animation:  fill-3 5s infinite alternate, colors 5s infinite alternate;
+}
+
+
+.bar.fill4 {
+   animation:  fill-4 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill5 {
+   animation:  fill-5 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill6 {
+   animation:  fill-6 5s infinite alternate, colors 5s infinite alternate;
+}
+
+
+
+@keyframes fill {
+  0%   { width: 0; }
+  33%  { width: 30px;}
+  66%  { width: 10px;}
+  100% { width: 105px; }
+}
+
+@keyframes fill-1 {
+  0%   { width: 0; }
+  33%  { width: 50px;}
+  66%  { width: 20px;}
+  100% { width: 130px; }
+}
+
+@keyframes fill-2 {
+  0%   { width: 0; }
+  33%  { width: 90px;}
+  66%  { width: 70px;}
+  100% { width: 136px; }
+}
+
+@keyframes fill-3 {
+  0%   { width: 0; }
+  33%  { width: 50px;}
+  66%  { width: 24px;}
+  100% { width: 109px; }
+}
+
+@keyframes fill-4 {
+  0%   { width: 0; }
+  33%  { width: 98px;}
+  66%  { width: 34px;}
+  100% { width: 99px; }
+}
+
+@keyframes fill-5 {
+  0%   { width: 0; }
+  33%  { width: 30px;}
+  66%  { width: 10px;}
+  100% { width: 148px; }
+}
+
+
+@keyframes fill-6 {
+  0%   { width: 0; }
+  33%  { width: 48px;}
+  66%  { width: 22px;}
+  100% { width: 140px; }
+}
+
+@keyframes colors {
+  0% { background-color: #5a5a5a;}
+  50% { background-color: #3a3;}
+  100% { background-color: #6a6a6a;}
+}
+ 
