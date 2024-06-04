@@ -177,3 +177,57 @@ h1::before {
   100% { background-color: #6a6a6a;}
 }
  
+/* animacion 3 */
+.loader {
+  width: 80px;
+  margin-left: 30px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid lightblue;
+  border-right-color: orange;
+  animation: l2 1s infinite linear;
+}
+@keyframes l2 {to{transform: rotate(1turn)}}
+
+
+.pacman {
+  width: 100px;
+  margin-left: 30px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(farthest-side,#000 98%,#0000) 55% 20%/8px 8px no-repeat,  
+    #ffcc00;
+  box-shadow: 2px -6px 12px 0px inset rgba(0, 0, 0, 0.7);
+  animation: l4 .5s infinite steps(5) alternate;
+}
+@keyframes l4{ 
+    0% {clip-path: polygon(50% 50%,100%   0,100% 0,0 0,0 100%,100% 100%,100% 100%)}
+  100% {clip-path: polygon(50% 50%,100% 65%,100% 0,0 0,0 100%,100% 100%,100%  35%)}
+}
+
+
+/* animacion 5*/
+/* HTML: <div class="loader"></div> */
+.flechas {
+  width: 30px;
+  height: 30px;
+  margin-left: 30px;
+  color: #000;
+  display: flex;
+  background: 
+    linear-gradient(currentColor 0 0) center/calc(100% - 30px) 10px,
+    conic-gradient(from -136deg at right,#0000 ,currentColor 1deg 90deg,#0000 91deg) right/15px 100%,
+    conic-gradient(from   44deg at left ,#0000 ,currentColor 1deg 90deg,#0000 91deg) left /15px 100%;
+  background-repeat: no-repeat;
+  animation: l8 .5s infinite alternate;
+}
+.flechas:before {
+  content: "";
+  flex: 1;
+  background: inherit;
+  transform: rotate(90deg);
+}
+@keyframes l8 {
+  90%,100%{width:80px}
+}

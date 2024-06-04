@@ -24,8 +24,8 @@ aside{
 
 /* TRANSICIONES */
 .art1{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 130px;
     animation: animacion2 10s infinite;
     transition: width 2s;
     /* para que cambie de color */
@@ -35,8 +35,8 @@ aside{
     animation-iteration-count: infinite;
 }
 .art2{
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 110px;
     animation: animacion2 10s infinite;
     transition: width 2s;
      /* para que cambie de color */
@@ -47,14 +47,18 @@ aside{
 
 }
 
-.art3 {
+
+.art6 {
+    animation: animacion2 10s infinite;
     width: 100px;
     height: 100px;
-    animation: animacion2 10s infinite;
-    transition: width 2s;
-    background-color: black;
+    transition: width 2s, height 2s, transform 2s;
+    /* para que cambie de color */
+    background-color: darkblue;
+    animation-name: art6;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 }
-
 
 .art1 {
     transition-timing-function: linear;
@@ -67,6 +71,7 @@ aside{
 
 
 
+
 .art1:hover {
     width: 300px;
 }
@@ -75,6 +80,13 @@ aside{
     width: 300px;
 }
 
+
+
+.art6:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}
 
 
 
@@ -106,6 +118,18 @@ aside{
     }
 }
 
+@keyframes art6{
+    from {
+        background-color: brown;
+    } 
+    to {
+        background-color: gray;
+    }
+    to {
+        background-color: #25b09b;
+    }
+}
+
 #delay {
     font-size: 14px;
     transition-property: font-size;
@@ -116,3 +140,72 @@ aside{
   #delay:hover {
     font-size: 36px;
   }
+
+  /* CONTENIDO 1 */ 
+.cont1 {
+    width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+    border: 4px solid #0000;
+    border-radius: 50%;
+    border-right-color: #25b09b;
+    animation: l15 1s infinite linear;
+}
+
+.cont1::before,
+.cont1::after {
+    content: "";
+    grid-area: 1/1;
+    margin: 2px;
+    border: inherit;
+    border-radius: 50%;
+    animation: l15 2s infinite;
+}
+
+.cont1::after {
+    margin: 8px;
+    animation-duration: 3s;
+}
+
+
+/*BIBLIOTECA 2*/
+.loader {
+    width: 100px;
+    aspect-ratio: 1;
+    outline: 2px solid #000000;
+    background:
+        radial-gradient(farthest-side, #000 90%, #0000) 0 0/8px 8px no-repeat,
+        conic-gradient(from 90deg at 10px 10px, #0000 90deg, #061464 0),
+        conic-gradient(from -90deg at 30px 30px, #0000 90deg, #061464 0);
+    animation: l3 1.5s infinite;
+}
+
+h2{
+    text-align: center;
+}
+
+
+.transaciones1 {
+    width: 100px;
+    height: 100px;
+    animation: animacion2 10s infinite;
+    transition: width 2s, height 4s;
+    background-color: green;
+}
+
+.transaciones1:hover {
+    width: 300px;
+    height: 300px;
+}
+
+
+#art3 {
+    transition-timing-function: ease-in;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+}
+
+#art3:hover {
+    width: 300px;
+}
